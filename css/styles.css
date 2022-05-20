@@ -1,46 +1,180 @@
+:root{
+    --primary-font-family: 'Roboto', sans-serif;
+    --accent-color: #2196F3;
+    --grey-background-color: #2F303A;
+    --secondary-accent-color: #188CE8;
+    --title-color: #212121;
+    --light-background-color: #ffffff;
+    --light-grey-background-color: #F5F4FA;
+    --text-color: #757575;
+    --transparent-white-color: rgba(255, 255, 255, 0.6);
+    --dark-logo-black-color: #000000;
+
+}
+
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
 }
+body {
+    font-family: var(--primary-font-family);
+}
 
 /* ===========HEADER========= */
 
-.logo-dark {
+.header {
+    background-color: var(--light-background-color);
+}
+.logo {
     font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: #2196F3;
+        color: var(--accent-color);
 }
-.logo-dark-black {
-    color: #000000;
+.logo-dark {
+    color: var(--dark-logo-black-color);
+}
+.navigation-list,
+.header-contact-list {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
 }
 .navigation-list {
-    font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #212121;
+    color: var(--title-color);
 }
+.navigation-list-item.current,
 .navigation-list-item:hover,
-.navigation-list-item:focus {
-    color: #2196F3;
-}
-.header-contact-list {
-    font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-}
-.header-contact-list-item {
-    color: #757575;
-}
+.navigation-list-item:focus,
 .header-contact-list-item:hover,
 .header-contact-list-item:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+.header-contact-list-item {
+    color: var(--text-color);
+}
+
+
+/*===========HERO==========*/
+
+.hero {
+    background-color: var(--grey-background-color);
+}
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--light-background-color);
+}
+.hero-button {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.85;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--light-background-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--secondary-accent-color);
+}
+
+/*===========ADVANTAGES SECTION=========*/
+
+.advantage-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-color);
+}
+.advantage-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+}
+
+/*===========OUR WORK SECTION===========*/
+
+.work-title,
+.our-team-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-color);
+}
+
+/*===============OUR TEAM============*/
+
+.our-team {
+    background-color: var(--light-grey-background-color);
+}
+.team-member-card {
+    background-color: var(--light-background-color);
+}
+.team-member,
+.team-member-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;   
+}
+.team-member {
+    font-weight: 500;
+    color: var(--title-color); 
+}
+.team-member-position {
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/*==================FOOTER=============*/
+
+.logo-light {
+    color: var(--light-background-color);
+}
+.footer {
+    background-color: var(--grey-background-color);
+}
+.contact-info {
+    font-style: normal;
+}
+.contact-info-mail,
+.contact-info-phone,
+.contact-info-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.contact-info-address {
+    color: var(--light-background-color);
+}
+.contact-info-mail,
+.contact-info-phone {
+    color: var(--transparent-white-color);
+}
+.contact-info-address:hover,
+.contact-info-address:focus,
+.contact-info-mail:hover,
+.contact-info-mail:focus,
+.contact-info-phone:hover,
+.contact-info-phone:focus {
+    color: var(--accent-color)
 }
