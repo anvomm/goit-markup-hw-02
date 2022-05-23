@@ -48,6 +48,9 @@ body {
 .navigation-list {
     color: var(--title-color);
 }
+.navigation-list-item {
+    color: var(--title-color);
+}
 .header-contact-list-item {
     color: inherit;
 }
@@ -101,7 +104,6 @@ body {
         color: var(--title-color);
 }
 .advantage-description {
-        font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -138,9 +140,6 @@ body {
     font-weight: 500;
     color: var(--title-color); 
 }
-.team-member-position {
-    font-weight: 400;
-}
 
 /*==================FOOTER=============*/
 
@@ -156,7 +155,6 @@ body {
 .contact-info-mail,
 .contact-info-phone,
 .contact-info-address {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -206,7 +204,6 @@ body {
     color: var(--title-color);
 }
 .projects-item-class {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
